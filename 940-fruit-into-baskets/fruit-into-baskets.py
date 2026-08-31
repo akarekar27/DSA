@@ -6,7 +6,7 @@ class Solution(object):
         my_dict = {}
         while r<len(fruits):
             my_dict[fruits[r]] = my_dict.get(fruits[r],0)+1
-            while len(my_dict)>2:
+            if len(my_dict)>2:
                 my_dict[fruits[l]]-=1
                 if my_dict[fruits[l]]==0:
                     del my_dict[fruits[l]]

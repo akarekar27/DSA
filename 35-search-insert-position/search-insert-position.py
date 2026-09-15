@@ -1,5 +1,5 @@
-class Solution(object):
-    def searchInsert(self, nums, target):
+class Solution:
+    def searchInsert(self, nums: list[int], target: int) -> int:
         l = 0
         r = len(nums)-1
         while l<=r:
@@ -10,8 +10,5 @@ class Solution(object):
                 r = mid - 1
             else:
                 l = mid + 1
-        return l               
-
-
-
-        
+        return l  
+            

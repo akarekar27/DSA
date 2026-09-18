@@ -1,5 +1,5 @@
-class Solution(object):
-    def validPalindrome(self, s):
+class Solution:
+    def validPalindrome(self, s: str) -> bool:
         def is_Palindrome(l , r):
             while (l<r):
                 if s[l] != s[r]:
@@ -17,4 +17,5 @@ class Solution(object):
             left+=1
             right-=1
         return True               
+            
         
